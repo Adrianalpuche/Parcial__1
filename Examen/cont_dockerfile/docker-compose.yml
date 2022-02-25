@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  httpserver:
+    image: webdevops/php-apache
+    container_name: server
+    volumes:
+    - ./app:/app/
+
+    ports:
+    - 84:80

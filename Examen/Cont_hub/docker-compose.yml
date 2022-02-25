@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  servidorweb:
+    image: php:7.4-apache
+    container_name: servidorweb
+    volumes:
+      - ./app:/var/www/html
+    ports:
+      - 83:80
